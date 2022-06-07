@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* - Weights: 400 */
+    background-image: url("../images/bg-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--violet); 
+    background-position: top 10px left 10px;   
+    color: white;
+    line-height: 1.5;
+    letter-spacing: 1.6;
+    font-size: 1.1rem;
+}
+
+.header {
+    height: 55px;
+    margin-top: 60px;
+    margin-left: 70px;
+}
+
+.header img {
+    height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 70px 70px;
+    display: flex;
+}
+
+.image {
+    width: 55%;
+}
+
+.image img {
+    width: 100%;
+}
+
+.texts {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 45px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif; /* - Weights: 400, 600 */
+    font-size: 2.5rem;
+}
+
+.texts p {
+    padding: 20px 0;
+    padding-right: 32px;
+}
+
+.button button{
+    margin-top: 10px;
+    padding: 15px 60px;
+    border-radius: 30px;
+    border: none;
+    color: var(--violet);
+    background-color: white;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif; /* - Weights: 400, 600 */
+    box-shadow: 2px 3px 10px -5px black;
+}
+
+.button button:hover{
+    cursor: pointer;        
+    color: white;
+    background-color: var(--soft-magenta);
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.icon{
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon:hover{
+    border: 1px solid var(--soft-magenta);
+    color: var(--soft-magenta);
+    cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media all and (max-width: 700px) {
+    body {
+        background-image: url(../images/bg-mobile.svg);
+        background-size: contain;
+    }
+
+    .container {
+        display: block;
+        padding: 35px;
+    }
+
+    .header {
+        height: 35px;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .image, .texts, .texts p {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .texts p {
+        font-size: 1rem;
+    }
+
+    .button {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+    }
+
+    .button button {
+        margin-top: 30px;
+        padding: 10px 70px;
+        border-radius: 30px;
+        font-size: 0.8rem;
+    }
+
+    .icons {
+        justify-content: center;
+        margin: 25px auto;
+    }
+
+    .icon{
+        font-size: 0.9rem;
+        margin: 0 5px;
+        padding: 10px;
+    }
+}
+
