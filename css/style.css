@@ -20,6 +20,8 @@ body {
     line-height: 1.5;
     letter-spacing: 1.6;
     font-size: 1.1rem;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .header {
@@ -34,7 +36,7 @@ body {
 
 .container {
     margin: 0 auto;
-    padding: 70px 70px;
+    padding: 50px 70px;
     display: flex;
 }
 
